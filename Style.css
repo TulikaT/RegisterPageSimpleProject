@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1500px) {
+    .container{
+        width: auto;
+        height: auto;
+        flex-direction: column;
+    }
+    
+}
+
+.left{
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+.right{
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+}
+.deco{
+    display: flex;
+
+}
+@media screen and (max-width: 1500px) {
+    .deco{
+        display: none;
+        
+    }
+    .detail{
+        align-items: center;
+    }
+
+    
+}
+
+
+.tri{
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid tomato;
+    
+}
+.Tri{
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid tomato;
+    
+}
+
+.circle-container{
+    position: relative;
+    width: 700px;
+    height: 700px;
+    margin: auto;
+}
+
+.circle{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    position: absolute;
+    object-fit: cover;
+}
+.top-left{
+top: 0;
+left: 0;
+}
+.top-right{
+top: 0;
+right: 0;
+}
+.bottom-left{
+bottom: 0;
+left: 0;
+}
+.bottom-right{
+bottom: 0;
+right: 0;
+}
+.center-square{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid black;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.right{
+    justify-content: center;
+    align-items: center;
+}
+
+.detail{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    background-color: #ffffff93;
+    padding-left: 30px;
+    border-radius: 20px;
+}
+
+
+.form {
+        width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    background-color: #ffffff93;
+    padding-left: 30px;
+    border-radius: 20px;
+    
+}
+
+.detail h1{
+    font-size: 6rem;
+    margin-bottom: -15px;
+}
+
+.detail h2{
+    font-size: 3rem;
+    margin-bottom: 60px;
+}
+
+.detail button{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 98, 0);
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.detail button:hover{
+    background-color: rgb(255, 123, 0);
+}
+
+.detail button a{
+    text-decoration: none;
+    color: black;
+}
+
+.left{
+    background-image: url(./images/painting.jpg);
+    background-size: cover;
+}
+
+.form{
+    position: relative;
+    width: 700px;
+    height: 700px;
+    margin: auto;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+.form input{
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.form h1{
+
+    font-size: 6rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form button{
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 98, 0);
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.form button:hover{
+    background-color: rgb(255, 123, 0);
+}
+
+.form input[type="file"]{
+    border-radius: 20px;
+
+   color: rgb(0, 0, 0);
+}
+
+input[type="file"] {
+  display: none; /* Hide the default */
+}
+
+.custom-file-label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 20px;
+}
